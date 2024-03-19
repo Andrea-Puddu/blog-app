@@ -8,9 +8,8 @@ import {useForm} from 'react-hook-form';
 import Button from './Button';
 import Input from './Input';
 import Logo from './Logo';
-import {useForm} from 'react-hook-form';
 
-function Login() {
+function LoginComponent() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const {register, handleSubmit} = useForm();
@@ -33,13 +32,13 @@ function Login() {
   return (
     <div className='flex items-center justify-center w-full'>
       <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
-        <div className='mb-2 flex justify-center'>
-          <span className='inline-block w-full max-w-[100px]'>
-            <Logo width='100%' />
+        <div className='mb-4 flex justify-center '>
+          <span className='  flex  justify-center w-full max-w-[100px]'>
+            <Logo width='100%' height='70px' />
           </span>
         </div>
         <h2 className='text-center text-2xl font-bold leading-tight'>Sign in to your account</h2>
-        <p className='mt-2 text-center text-base text-black/60'>
+        <p className='my-4 text-center text-lg text-black/60'>
           Don&apos;t have any account?&nbsp;
           <Link
             to='/signup'
@@ -82,4 +81,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginComponent;

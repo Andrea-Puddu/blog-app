@@ -1,8 +1,16 @@
+import React from 'react';
+
+import Container from '../components/container/Container';
+import PostForm from '../components/post-form/PostForm';
 
 const AddPost = () => {
   return (
-    <div>AddPost</div>
-  )
-}
+    <div className='py-8'>
+      <Container>
+        <PostForm />
+      </Container>
+    </div>
+  );
+};
 
-export default AddPost
+export default AddPost;
